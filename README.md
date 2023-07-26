@@ -6,7 +6,7 @@ Este é o site pessoal em construção de Hedson Lopes, Cientista de Dados com e
 
 ## Utilização
 
-Para visualizar o site acesse o [Link](redsonlopez.github.io/page/) ou abra o arquivo `index.html` em seu navegador web preferido. O site fornece informações sobre Hedson Lopes, seus projetos e detalhes de contato.
+Para visualizar o site acesse o [Link](https://redsonlopez.github.io/page/) ou abra o arquivo `index.html` em seu navegador web preferido. O site fornece informações sobre Hedson Lopes, seus projetos e detalhes de contato.
 
 ## Contribuições
 
