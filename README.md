@@ -1,25 +1,12 @@
-# Hedson Lopes - Cientista de Dados
-
-![Foto de Perfil](imagens/espontaneo.png)
+# Página - Hedson Lopes
 
 ## Sobre
 
-Este é o site pessoal de Hedson Lopes, um Cientista de Dados com experiência em algoritmos de aprendizado de máquina, análise estatística e visualização de dados. O site exibe as habilidades, projetos e informações de contato de Hedson.
-
-## Portfólio
-
-- [Análise Exploratória de Dados sobre Smartphones - EDA em Python](https://github.com/redsonlopez/exploratory_data_analysis/blob/main/eda_002_smartphone.ipynb)
-- [Modelo de Regressão para Preços de Casas - ML em Python](https://github.com/redsonlopez/machine_learning/blob/main/ml_0012_housing_price.ipynb)
-- [Modelo de Classificação para Risco de Crédito - ML em Python](https://github.com/redsonlopez/machine_learning/blob/main/ml_0013_credit_risk.ipynb)
-
-## Contato
-
-- [LinkedIn](https://www.linkedin.com/in/redsonlopez)
-- [Kaggle](https://www.kaggle.com/redsonlopez)
+Este é o site pessoal em construção de Hedson Lopes, Cientista de Dados com experiência em algoritmos de aprendizado de máquina, análise estatística e visualização de dados. O site exibe as habilidades, projetos e informações de contato de Hedson.
 
 ## Utilização
 
-Para visualizar o site, basta abrir o arquivo `index.html` em seu navegador web preferido. O site fornece informações sobre Hedson Lopes, seus projetos e detalhes de contato.
+Para visualizar o site acesse o [Link](redsonlopez.github.io/page/) ou abra o arquivo `index.html` em seu navegador web preferido. O site fornece informações sobre Hedson Lopes, seus projetos e detalhes de contato.
 
 ## Contribuições
 
