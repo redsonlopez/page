@@ -12,10 +12,6 @@ body {
     color: #333;
   }
 
-  nav ul li a:hover {
-    text-decoration: underline;
-  }
-
   header {
     background-color: #555;
     color: #fff;
@@ -26,6 +22,30 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
+  }
+
+  .material-icons {
+    vertical-align: sub;
+  }
+
+  #contact a:hover {
+    color: #006eff;
+    text-decoration: none;
+  }
+
+  .material-icons:hover {
+    color: #006eff;
+    cursor: pointer;
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .contact-item i {
+    margin-right: 5px;
   }
   
   h1 {
@@ -55,7 +75,24 @@ body {
   section {
     padding: 2rem 0;
   }
-  
+
+  .custom-button {
+    font-size: 20px;
+    font-family: 'NomeDaFonte', sans-serif;
+    padding: 10px 20px;
+    border: none;
+    background-color: #e7e7e7;
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+
+  .custom-button:hover {
+    background-color: #c3c3c3;
+    cursor: pointer;
+  }
+
   .profile-picture {
     background-color: #ddd;
   }
