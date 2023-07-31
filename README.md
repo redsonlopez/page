@@ -10,4 +10,4 @@ Para visualizar o site acesse o [Link](https://redsonlopez.github.io/page/).
 
 ## Contribuições
 
-Contribuições são bem-vindas! Se encontrar algum problema ou tiver sugestões de melhoria, sinta-se à vontade para abrir uma issue ou criar um pull request.
+Sua opinião e contribuição é extremamente valiosa. Se você encontrar qualquer problema ou tiver sugestões de melhoria, por favor, entre em contato.
