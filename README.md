@@ -2,7 +2,7 @@
 
 ## Sobre
 
-Este é o site pessoal em construção de Hedson Lopes, Cientista de Dados com experiência em algoritmos de aprendizado de máquina, análise estatística e visualização de dados. O site exibe habilidades, projetos e informações de contato de Hedson.
+Este é o site pessoal em construção de Hedson Lopes.
 
 ## Utilização
 
