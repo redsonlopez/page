@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
-	<title>Donation</title>
+	<title>Hedson Lopes</title>
+	<link rel="stylesheet" href="css/style.css">
     </head>
     <body>
 	<header>
-	    <h1>Ajude com um cafezinho</h1>
-	    <a href="index.html">Principal</a>
+	    <h1 id="start">Hedson Lopes</h1>
+	    <hr />
+	    <ul>
+		<li><a href="index.html">Principal</a></li>
+		<li><a href="stacks.html" title="Click para visualizar minhas Stacks">Stacks</a></li>
+		<li><a href="donation.html" title="Click para ajuda com um cafézinho">Donation</a></li>
+	    </ul>
 	</header>
 	<main>
-	    <form>
-		<fieldset method="post">
+	    <h2>Ajude com um cafézinho</h2>
+	    <form method="post">
+		<fieldset>
 		    <legend>Café</legend>
 		    <input name="coffe" type="radio" value="50" />R$50,00<br>
 		    <input name="coffe" type="radio" value="100" />R$100,00<br>
@@ -19,19 +26,20 @@
 		</fieldset>
 		<fieldset>
 		    <legend>Contato</legend>
-		    nome: <input name="name" type="text" /><br>
-		    e-mail: <input name="email" type="email" /><br>
+		    <label>nome: </label><input name="name" type="text" /><br>
+		    <label>e-mail: </label><input name="email" type="email" /><br>
 		</fieldset>
 		<fieldset>
 		    <legend>Deixe um comentário</legend>
 		    <textarea cols="20" name="comments" rows="5"></textarea>
 		</fieldset>
-		<input type="submit" value="Submit" />
-	    </form>
+		<input type="submit" value="Enviar" />
+	    </form><br>
+	    <small><a href="#start">Início</a></small>
 	</main>
 	<footer>
+	    <hr />
 	    <p>&copy; 2025 Hedson Lopes.</p>
 	</footer>
     </body>
 </html>
-
