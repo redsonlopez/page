@@ -18,3 +18,6 @@ button, input, textarea {
     background-color: #232323;
     color: #ffffff;
 }
+ul {
+    list-style: None;
+}
