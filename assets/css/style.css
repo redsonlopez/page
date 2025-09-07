@@ -1,24 +1,27 @@
-header, footer{
-    background-color: #232323;
-    background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, #01010177 0px, #23232377 70px);
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
     color: #ffffff;
-    width: auto;
-    height: 155px;
+}
+header, main, footer {
     padding: 1px;
     padding-left: 15px;
 }
+header, footer{
+    background-color: #232323;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, #01010177 0px, #23232377 70px);
+    width: auto;
+    height: 155px;
+}
 a {
     text-decoration: none;
-    color: #ffffff;
-}
-body {
-    background-color: #121212;
     color: #ffffff;
 }
 button, input, textarea {
     background-color: #232323;
     color: #ffffff;
 }
-ul {
+#simple-ul {
     list-style: None;
 }
