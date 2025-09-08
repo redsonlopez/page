@@ -47,6 +47,11 @@
 		- \( r = 1 \): Correlação positiva perfeita<br>
 		- \( r = -1 \): Correlação negativa perfeita<br>
 		- \( r = 0 \): Sem correlação linear<br>
+		\[
+		r = \frac{\sum_{i=1}^{n}(x_i - \bar{x})(y_i - \bar{y})}
+		{\sqrt{\sum_{i=1}^{n}(x_i - \bar{x})^2} \cdot \sqrt{\sum_{i=1}^{n}(y_i - \bar{y})^2}}
+		\]
+
 		</p>
 		<p>
 		<b>Coeficiente de Spearman:</b><br>
@@ -146,12 +151,18 @@
 		<p>
 		<b>MAE - Erro médio Absoluto:</b><br>
 		Quanto menor o MAE, melhor o ajuste do modelo.<br>
+		\[
+		MAE = \frac{1}{n} \sum_{i=1}^{n} \left| y_i - \hat{y}_i \right|
+		\]
 		</p>
 		<p>
 		<b>MSE - Erro médio Quadrático:</b><br>
 		O MSE penalisa erros maiores mais fortemente do que erros menores,<br>
 		devido a natureza dos quadrados.<br>
 		Assim como o MAE, quanto menor o valor do MSE, melhor o ajuste do modelo.<br>
+		\[
+		MSE = \frac{1}{n} \sum_{i=1}^{n} \left( y_i - \hat{y}_i \right)^2
+		\]
 		<p>
 	    </div>
 
