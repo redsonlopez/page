@@ -37,7 +37,11 @@
 	    <div>
 		<h3>Cálculo de Correlação de Variáveis</h3>
 		<p>
-		<b>Coeficiente de Pearson:</b><br>
+		<b>Coeficiente de Pearson:</b>
+		\[
+		r = \frac{\sum_{i=1}^{n}(x_i - \bar{x})(y_i - \bar{y})}
+		{\sqrt{\sum_{i=1}^{n}(x_i - \bar{x})^2} \cdot \sqrt{\sum_{i=1}^{n}(y_i - \bar{y})^2}}
+		\]
 		Mede a <i>força</i> e a <i>direção</i> da relação linear<br>
 		entre duas variáveis quantitativas.<br>
 		Ele assume que as variáveis têm uma distribuição normal.<br>
@@ -47,11 +51,6 @@
 		- \( r = 1 \): Correlação positiva perfeita<br>
 		- \( r = -1 \): Correlação negativa perfeita<br>
 		- \( r = 0 \): Sem correlação linear<br>
-		\[
-		r = \frac{\sum_{i=1}^{n}(x_i - \bar{x})(y_i - \bar{y})}
-		{\sqrt{\sum_{i=1}^{n}(x_i - \bar{x})^2} \cdot \sqrt{\sum_{i=1}^{n}(y_i - \bar{y})^2}}
-		\]
-
 		</p>
 		<p>
 		<b>Coeficiente de Spearman:</b><br>
