@@ -29,8 +29,12 @@
 	    <div>
 		<h3>Análise de Normalidade das Variáveis Explicativas</h3>
 		<p>
-		<b>Shapiro-Wilk:</b><br>
-		...<br>
+		<b>Shapiro-Wilk:</b>
+		\[
+		W = \frac{\left( \sum_{i=1}^{n} a_i \, x_{(i)} \right)^2}
+		{\sum_{i=1}^{n} \left( x_i - \bar{x} \right)^2}
+		\]
+
 		</p>
 	    </div>
 
@@ -53,7 +57,10 @@
 		- \( r = 0 \): Sem correlação linear<br>
 		</p>
 		<p>
-		<b>Coeficiente de Spearman:</b><br>
+		<b>Coeficiente de Spearman:</b>
+		\[
+		\rho = 1 - \frac{6 \sum_{i=1}^{n} d_i^2}{n \left( n^2 - 1 \right)}
+		\]
 		Mede a relação <i>monotônica</i> entre duas variáveis,<br>
 		o que significa que, à medida que uma variável aumenta,<br>
 		a outra também aumenta ou diminui, mas não necessariamente de forma linear.<br>
@@ -62,9 +69,13 @@
 		- Baseia-se no ranking das variáveis.<br>
 		</p>
 		<p>
-		<b>Coeficiente de Kendall</b><br>
+		<b>Coeficiente de Kendall</b>
+		\[
+		\tau = \frac{C - D}{\frac{1}{2}n(n-1)}
+		\]
 		Outra medida não paramétrica que mede a associação entre duas variáveis.<br>
 		Ele leva em consideração a concordância entre pares de observações.<br>
+		Onde C = número de pares concorrentes e D = número de pares discordantes.<br>
 		- <i>Quando usar</i>: Utilize Kendall quando o número de dados é pequeno,<br>
 		ou quando há muitos empates nos dados.<br>
 		- Baseia-se na concordância e discordância de pares ordenados.<br>
@@ -101,7 +112,10 @@
 	    <div>
 		<h3>Análise do Modelo</h3>
 		<p>
-		<b>Teste T:</b><br>
+		<b>Teste T:</b>
+		\[
+		t = \frac{r}{\sigma_r}
+		\]
 		O Teste T avalia a significância estatística de cada coeficiente no modelo.<br>
 		Um p-valor baixo indica que o coeficiente é significativo.<br>
 		</p>
