@@ -9,37 +9,43 @@
 	    onload="renderMathInElement(document.body);"></script>
     </head>
     <body>
-	<main>
+	<main id="ml">
+	    
 	    <div>
-		<h3>Coleta e limpeza dos dados</h3>
+		<h2>Limpeza dos Dados</h2>
+
+		<h3>Dados faltantes</h3>
 		<p>
 		<b>...</b><br>
-		...<br>
+		...
+		</p>
+		<h3>...</h3>
+		<p>
+		<b>...</b><br>
+		dados duplicados, Inconsistências
 		</p>
 	    </div>
 
 	    <div>
+		<h2>Análise exploratória de Dados</h2>
+
 		<h3>Análise de Outliers</h3>
 		<p>
 		<b>...</b><br>
-		...<br>
+		analisar se remove, transforma ou mantém<br>
 		</p>
-	    </div>
 
-	    <div>
-		<h3>Análise de Normalidade das Variáveis Explicativas</h3>
+		<h3>Teste de normalidade das variáveis</h3>
 		<p>
 		<b>Shapiro-Wilk:</b>
 		\[
 		W = \frac{\left( \sum_{i=1}^{n} a_i \, x_{(i)} \right)^2}
 		{\sum_{i=1}^{n} \left( x_i - \bar{x} \right)^2}
 		\]
-
+		Importante para escolher tipo de correlação
 		</p>
-	    </div>
 
-	    <div>
-		<h3>Cálculo de Correlação de Variáveis</h3>
+		<h3>Correlação das Variáveis</h3>
 		<p>
 		<b>Coeficiente de Pearson:</b>
 		\[
@@ -80,37 +86,90 @@
 		ou quando há muitos empates nos dados.<br>
 		- Baseia-se na concordância e discordância de pares ordenados.<br>
 		</p>
+
+		<h3>Multicolinearidade:</h3>
 		<p>
-		<b>Multicolinearidade:</b>
-		...<br>
+		<b>VIF</b><br>
+		...
+		</p>
+		<p>
+		<b>Matriz de Correlação</b><br>
+		...
 		</p>
 	    </div>
 
 	    <div>
-		<h3>Construção Inicial do Modelo</h3>
+		<h2>Transformação das variáveis</h2>
+
+		<h3>Codificação de variáveis categóricas</h3>
+		<p>
+		<b>Label Encoding</b><br>
+		quando há ordem (Ex: Ensino Fundamental = 1, Médio = 2, Superior = 3)
+		</p>
+		<p>
+		<b>One Hot Encoding</b><br>
+		quando não há ordem (Ex: Cores: vermelho, azul, verde)
+		</p>
+		<p>
+		<b>Normalização (Min-Max)</b><br>
+		para algoritmos que dependem de escala [0,1]
+		</p>
+		<p>
+		<b>Padronização (Z-score)</b><br>
+		para algoritmos que assumem média 0 e desvio 1 (ex: regressão, PCA, SVM)
+	    </div>
+
+	    <div>
+		<h2>Seleção de variáveis</h2>
+
+		<h3>...</h3>
+		<p>
+		<b>Stepwise</b><br>
+		inclusão/remoção iterativa de variáveis pelo p-valor
+		</p>
+		<p>
+		<b>Lasso (L1)</b><br>
+		regularização que força alguns coeficientes a zero.<br>
+		Usar <b>Cross Validation</b> para achar o <b>λ (lambda) ótimo</b>
+		</p>
+	    </div>
+
+	    <div>
+		<h2>Construção Inicial do Modelo</h2>
+
+		<h3>...</h3>
 		<p>
 		<b>...</b><br>
-		...<br>
+		Definir variáveis dependente e independentes<br>
+		Ajustar o modelo (regressão linear, logística, etc)<br>
 		</p>
 	    </div>
 
 	    <div>
-		<h3>Análise de Resíduos</h3>
+		<h2>Avaliação dos pressupostos do modelo</h2>
+
+		<h3>...</h3>
 		<p>
-		<b>Teste de normalidade (Shapiro-Wilk):</b><br>
+		<b>Normalidade dos resíduos:</b><br>
 		...<br>
 		</p>
 		<p>
-		<b>Teste de Homocedasticidade (Breusch-Pagan):</b><br>
+		<b>Homocedasticidade dos resíduos (Breusch-Pagan):</b><br>
 		Se o p-valor do teste menor que 0.05,<br>
 		indica a presença de heterocedasticidade<br>
 		e pode ser necessário ajustar o modelo<br>
 		ou usar métodos robustos para estimativa de variância.<br>
+		</p>
 		<p>
+		<b>Independência dos resíduos (Durbin-Watson)</b>
+		...
+		</p>
 	    </div>
 
 	    <div>
-		<h3>Análise do Modelo</h3>
+		<h2>Testes estatísticos</h2>
+
+		<h3>...</h3>
 		<p>
 		<b>Teste T:</b>
 		\[
@@ -124,27 +183,16 @@
 		O Teste F avalia a significância global do modelo.<br>
 		Um p-valor baixo sugere que o modelo, como um todo, é significativo.<br>
 		</p>
+	    </div>
+
+	    <div>
+		<h2>Avaliação da qualidade do ajuste</h2>
+
+		<h3>...</h3>
 		<p>
 		<b>Coeficiente de determinação (R²):</b><br>
 		Mede a proporção da variável dependente explicada pelo modelo,<br>
 		ajustada pelo número de preditores.<br>
-		</p>
-		<p>
-		<b>underfitting:</b><br>
-		...<br>
-		</p>
-		<p>
-		<b>overfitting:</b><br>
-		...<br>
-		</p>
-	    </div>
-
-	    <div>
-		<h3>Comparação de Modelos</h3>
-		<p>
-		<b>Modelo parcimonioso:</b><br>
-		É aquele que melhor explica o fenômeno que estamos estudando<br>
-		da forma mais simples possível, menor número de parâmetros.<br>
 		</p>
 		<p>
 		<b>Critério de Informação de Akaike - AIC:</b><br>
@@ -176,7 +224,35 @@
 		\[
 		MSE = \frac{1}{n} \sum_{i=1}^{n} \left( y_i - \hat{y}_i \right)^2
 		\]
+		</p>
+	    </div>
+
+	    <div>
+		<h2>Validação do modelo</h2>
+
+		<h3>...</h3>
 		<p>
+		<b>Treino/Teste ou Cross Validation</b><br>
+		</p>
+		<p>
+		<b>underfitting:</b><br>
+		modelo simples demais<br>
+		</p>
+		<p>
+		<b>overfitting:</b><br>
+		complexo demais<br>
+		</p>
+	    </div>
+
+	    <div>
+		<h2>Comparação de Modelos</h2>
+
+		<h3>...</h3>
+		<p>
+		<b>Modelo parcimonioso:</b><br>
+		É aquele que melhor explica o fenômeno que estamos estudando<br>
+		da forma mais simples possível, menor número de parâmetros.<br>
+		</p>
 	    </div>
 
 	</main>
