@@ -12,7 +12,7 @@
 	<main id="ml">
 	    
 	    <div>
-		<h2>Limpeza dos Dados</h2>
+		<h2>Limpeza de Dados</h2>
 
 		<h3>Dados faltantes</h3>
 		<p>
@@ -141,6 +141,24 @@
 		<p>
 		<b>...</b><br>
 		Definir variáveis dependente e independentes<br>
+		Separação de dados para Treino (~ 60% a 80%),<br>
+		Validação (~ 10% a 20%) e Teste (~ 10% a 20% dos dados)<br>
+		Conjunto de dados pequenos (até alguns milhares de amostras) 60/20/20<br>
+		Conjuntos grandes (dezenas de milhares a milhões de amostras) 80/10/10<br>
+		Conjuntos de dados gigantes (milhões a bilhões de amostras) 98/01/01<br>
+    		<b>Sempre embaralhe os dados:</b><br>
+		Antes de fazer a divisão, é crucial embaralhar (randomizar)<br>
+		todo o conjunto de dados. Isso garante que a distribuição das classes (rótulos)<br>
+		seja a mesma nos três conjuntos, evitando que um conjunto contenha apenas um tipo de dado,<br>
+		o que poderia enviesar o treinamento e a avaliação.<br>
+		<b>A divisão deve ser aleatória, mas estratificada:</b><br>
+		Se você estiver trabalhando com dados desequilibrados<br>
+		(por exemplo, 90% de uma classe e 10% de outra),<br>
+		use a divisão estratificada (stratified split).<br>
+		Isso garante que a proporção de cada classe seja mantida nos conjuntos de treino, validação e teste.<br>
+    		A divisão 70/15/15 ou 80/10/10 é um bom ponto de partida:<br>
+		Se você não tem certeza, comece com uma dessas divisões e ajuste conforme necessário,<br>
+		dependendo do tamanho e da natureza dos seus dados.<br>
 		Ajustar o modelo (regressão linear, logística, etc)<br>
 		</p>
 	    </div>
