@@ -1,42 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
     <head>
-	<title>Hedson Lopes</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Desenvolvedor Full Stack / Engenheiro de Aprendizado de Máquina - Hedson Lopes</title>
 	<link rel="stylesheet" href="../assets/css/style.css">
     </head>
     <body>
 	<header>
-	    <h1 id="start">Hedson Lopes</h1>
-	    <ul id="simple-ul">
-		<li><a href="../index.html">Principal</a></li>
-		<li><a href="stacks.html" title="Click para visualizar minhas Stacks">Stacks</a></li>
-		<li><a href="donation.html" title="Click para ajuda com um cafézinho">Donation</a></li>
-	    </ul>
+	    <nav>
+		<h1 id="start">Hedson Lopes</h1>
+		<ul class="simple-ul">
+		    <li><a href="../index.html">Principal</a></li>
+		    <li><a href="stacks.html" title="Click para visualizar minhas Stacks">Stacks</a></li>
+		    <li><a href="donation.html" title="Click para ajuda com um cafézinho">Donation</a></li>
+		</ul>
+	    </nav>
 	</header>
 	<main>
-	    <h2>Ajude com um cafézinho</h2>
-	    <form method="post">
-		<fieldset>
-		    <legend>Café</legend>
-		    <input name="coffe" type="radio" value="50" />R$50,00<br>
-		    <input name="coffe" type="radio" value="100" />R$100,00<br>
-		    <input name="coffe" type="radio" value="250" />R$250,00<br>
-		    <input name="coffe" type="radio" value="500" />R$500,00<br>
-		</fieldset>
-		<fieldset>
-		    <legend>Contato</legend>
-		    <label>nome: </label><input name="name" type="text" /><br>
-		    <label>e-mail: </label><input name="email" type="email" /><br>
-		</fieldset>
-		<fieldset>
-		    <legend>Deixe um comentário</legend>
-		    <textarea cols="20" name="comments" rows="5"></textarea>
-		</fieldset>
-		<input type="submit" value="Enviar" />
-	    </form><br>
-	    <small><a href="#start">Início</a></small>
+	    <section>
+		<h2>Ajude com um cafézinho</h2>
+		<form method="post">
+		    <fieldset>
+			<legend>Café</legend>
+			<input name="coffe" type="radio" value="50" />R$50,00<br>
+			<input name="coffe" type="radio" value="100" />R$100,00<br>
+			<input name="coffe" type="radio" value="250" />R$250,00<br>
+			<input name="coffe" type="radio" value="500" />R$500,00<br>
+		    </fieldset>
+		    <fieldset>
+			<legend>Contato</legend>
+			<label>nome: </label><input name="name" type="text" /><br>
+			<label>e-mail: </label><input name="email" type="email" /><br>
+		    </fieldset>
+		    <fieldset>
+			<legend>Deixe um comentário</legend>
+			<textarea cols="20" name="comments" rows="5"></textarea>
+		    </fieldset>
+		    <input type="submit" value="Enviar" />
+		</form><br>
+	    </section>
 	</main>
 	<footer>
+	    <small><a href="#start">Início</a></small>
 	    <p>&copy; 2025 Hedson Lopes.</p>
 	</footer>
     </body>

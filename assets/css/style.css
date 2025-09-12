@@ -1,8 +1,17 @@
-body {
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
     background-color: #121212;
     color: #ffffff;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex: 1;
 }
 header, main, footer {
     padding: 1px;
@@ -13,6 +22,9 @@ header, footer{
     background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, #01010177 0px, #23232377 70px);
     width: auto;
     height: 155px;
+}
+section {
+    margin: 50px 0px 75px 0px;
 }
 p {
     padding: 1px;
@@ -26,7 +38,10 @@ button, input, textarea {
     background-color: #232323;
     color: #ffffff;
 }
-#simple-ul {
+.simple-ul {
+    list-style: None;
+}
+#start .simple-ul {
     list-style: None;
 }
 #ml h3 {
