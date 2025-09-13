@@ -20,25 +20,24 @@
 	<main>
 	    <section>
 		<h2>Ajude com um cafézinho</h2>
-		<form method="post">
-		    <fieldset>
+		<form method="post" action="" id=form></form>
+		    <fieldset disabled>
 			<legend>Café</legend>
-			<input name="coffe" type="radio" value="50" />R$50,00<br>
-			<input name="coffe" type="radio" value="100" />R$100,00<br>
-			<input name="coffe" type="radio" value="250" />R$250,00<br>
-			<input name="coffe" type="radio" value="500" />R$500,00<br>
+			<input name="coffe" type="radio" value="50" form="form" />R$50,00<br>
+			<input name="coffe" type="radio" value="100" form="form" />R$100,00<br>
+			<input name="coffe" type="radio" value="250" form="form" />R$250,00<br>
+			<input name="coffe" type="radio" value="500" form="form" />R$500,00<br>
 		    </fieldset>
 		    <fieldset>
 			<legend>Contato</legend>
-			<label>nome: </label><input name="name" type="text" /><br>
-			<label>e-mail: </label><input name="email" type="email" /><br>
+			<label form="name">nome: <input name="name" type="text" form="form" autofocus required/><label><br>
+			<label>e-mail: </label><input name="email" type="email" placeholder="Ex: meu@email.com" form="form" required/><br>
 		    </fieldset>
 		    <fieldset>
 			<legend>Deixe um comentário</legend>
-			<textarea cols="20" name="comments" rows="5"></textarea>
+			<textarea minlength="2" maxlength="50" cols="20" name="comments" rows="5" form="form"></textarea>
 		    </fieldset>
-		    <input type="submit" value="Enviar" />
-		</form><br>
+		    <input type="submit" value="Enviar" form="form"/>
 	    </section>
 	</main>
 	<footer>

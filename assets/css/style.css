@@ -44,6 +44,10 @@ button, input, textarea {
 #start .simple-ul {
     list-style: None;
 }
+#ml summary {
+    font-weight: bold;
+    font-size: 25px;
+}
 #ml h3 {
     padding-left: 35px;
 }

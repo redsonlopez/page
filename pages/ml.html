@@ -14,18 +14,19 @@
 	<main id="ml">
 	    
 	    <section>
-		<h2>Limpeza de Dados</h2>
-
-		<h3>Dados faltantes</h3>
-		<p>
-		<b>...</b><br>
-		...
-		</p>
-		<h3>...</h3>
-		<p>
-		<b>...</b><br>
-		dados duplicados, Inconsistências
-		</p>
+		<details>
+		    <summary>Limpeza de Dados</summary>
+		    <h3>Dados faltantes</h3>
+		    <p>
+		    <b>...</b><br>
+		    ...
+		    </p>
+		    <h3>...</h3>
+		    <p>
+		    <b>...</b><br>
+		    dados duplicados, Inconsistências
+		    </p>
+		</details>
 	    </section>
 
 	    <section>
@@ -271,9 +272,22 @@
 		<p>
 		<b>Modelo parcimonioso:</b><br>
 		É aquele que melhor explica o fenômeno que estamos estudando<br>
-		da forma mais simples possível, menor número de parâmetros.<br>
+		da forma <mark>mais simples possível</mark>, menor número de parâmetros.<br>
 		</p>
 	    </section>
+
+	    <section>
+		<progress id="progress" max="100" min="0" value="0"></progress>
+	    </section>
+
+	    <script>
+		var progress = document.getElementById("progress");
+		const interval = setInterval(() => {
+		    progress.value += 10;
+		    if (progress.value >= 100)
+			clearInterval(interval);
+		}, 1000);
+	    </script>
 
 	</main>
     </body>
