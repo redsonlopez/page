@@ -1,5 +1,16 @@
+title: Hedson Lopes
+description: Portfolio
+url: "https://redsonlopez.github.io/page"
+baseurl: ""
+
 theme: jekyll-theme-minimal
-title: Hedson Lopes Page
-description: Bookmark this to keep an eye on my project updates!
 markdown: kramdown
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-include-cache
+
+include: ["_pages"]
 
