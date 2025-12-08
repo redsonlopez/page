@@ -4,8 +4,4 @@ url: "https://redsonlopez.github.io/page"
 baseurl: ""
 
 theme: jekyll-theme-minimal
-markdown: kramdown
-
-plugins:
-  - jekyll-include-cache
 
