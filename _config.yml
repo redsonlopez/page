@@ -7,9 +7,6 @@ theme: jekyll-theme-minimal
 markdown: kramdown
 
 plugins:
-  - jekyll-seo-tag
-  - jekyll-feed
-  - jekyll-sitemap
   - jekyll-include-cache
 
 include: ["_pages"]
